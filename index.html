@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Draggable Map</title>
+    <style type="text/css">
+        #map {
+            width: 100%;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Draggable Map</h1>
+    <div id="map"></div>
+    <ul id="geoData">
+        <li>Latitude: <span id="lat-span"></span></li>
+        <li>Longitude: <span id="lon-span"></span></li>
+    </ul>
+    <script src="https://maps.googleapis.com/maps/api/js?key=" + apiKey + "&callback=initMap" async defer></script>
+    <script src="script.js"></script>
+</body>
+</html>
