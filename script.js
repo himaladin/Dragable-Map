@@ -1,9 +1,7 @@
 var map;
-var coordinates = JSON.parse(coordinates);
-var apiKey = apiKey;
 
 function initMap() {
-    var defaultLocation = { lat: coordinates.lat, lng: coordinates.lng };
+    var defaultLocation = { lat: 22.3038945, lng: 70.80215989999999 };
 
     map = new google.maps.Map(document.getElementById('map'), {
         center: defaultLocation,
@@ -24,3 +22,6 @@ function initMap() {
         document.getElementById('lon-span').innerHTML = latLng.lng();
     });
 }
+
+// Initialize the map when the page is loaded
+google.maps.event.addDomListener(window, 'load', initMap);
