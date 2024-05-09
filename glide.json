@@ -1,0 +1,23 @@
+[
+    {
+        "kind": "column",
+        "name": "Draggable Map",
+        "description": "Displays a draggable map with coordinates.",
+        "author": "Himaladin",
+        "params": [
+            {
+                "name": "coordinates",
+                "displayName": "Coordinates",
+                "type": "string"
+            },
+            {
+                "name": "apiKey",
+                "displayName": "API Key",
+                "type": "string"
+            }
+        ],
+        "result": {
+            "type": "string"
+        }
+    }
+]
